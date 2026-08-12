@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeriesWorld | Buscador de series</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="pagina">
+        <header class="header">
+            <div class="header__contenido">
+                <a class="header__logo" href="index.html"> SeriesWorld </a>
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="#inicio">Inicio</a>
+                    <a class="header__nav-link" href="#catalogo">Series</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="inicio">
+                <div class="hero__contenido">
+                    <p class="hero__etiqueta">Explora las historias mas impactantes</p>
+                    <h1 class="hero__titulo">Busca la serie del momento o encuentra una joya oculta</h1>
+                    <p class="hero__texto">Busca series y descubre su calificación, géneros y datos principales, todo en un solo lugar</p>
+                    <form class="hero__buscador" id="formulario-busqueda">
+                        <label class="hero__buscador-label" for="busqueda">Buscar serie</label>
+                        <div class="hero__buscador-controles">
+                            <input class="hero__buscador-controles--input" id="busqueda" type="search" name="busqueda" placeholder="Buscar: Friends" required>
+                            <button class="hero__buscador-controles--boton" type="submit">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="hero__destacada" id="serie-destacada">
+                    <p class="hero__destacada-etiqueta">Seleccion destacada</p>
+                    <div class="hero__destacada-contenido" id="destacada-contenido">
+
+                    </div>
+                </aside>
+            </section>
+
+
+            <section class="catalogo" id="catalogo">
+
+                <div class="catalogo__encabezado">
+                    <p class="catalogo__etiqueta">Catalogo</p>
+                    <h2 class="catalogo__titulo">Series destacadas</h2>
+                </div>
+                <p class="estado" id="estado"></p>
+                <div class="catalogo__series-grid" id="series-grid">
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer__marca">
+                <p class="footer__marca-logo">SeriesWorld</p>
+                <p class="footer__marca-texto">Encuentra nuevas historias</p>
+            </div>
+            <div class="footer__enlaces">
+                <p class="footer__enlaces-titulo">Explorar</p>
+                <a class="footer__enlaces-link" href="#inicio">Inicio</a>
+                <a class="footer__enlaces-link" href="#catalogo">Series</a>
+            </div>
+            <div class="footer__proyecto">
+                <p class="footer__proyecto-titulo">Proyecto</p>
+                <p class="footer__proyecto-texto">Desarrollado para mostrar HTML, Sass, JavaScript y Axios</p>
+                <p class="footer__proyecto-texto">Informacion proporcionada por <a class="footer__proyecto-link" href="https://www.tvmaze.com/">TVmaze</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <section class="modal" aria-hidden="true" id="modal" hidden>
+        <div class="modal__contenido">
+            <button class="modal__cerrar" id="cerrar-modal" type="button">&times;</button>
+            <div class="modal__detalles" id="modal-detalles">
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

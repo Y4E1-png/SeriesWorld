@@ -578,7 +578,9 @@ input {
     grid-column: auto;
   }
   .serie-card {
-    max-width: 380px;
+    width: 100%;
+    min-width: 0;
+    max-width: 400px;
     margin: 0 auto;
   }
   .serie-card__imagen-contenedor {

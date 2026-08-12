@@ -39,4 +39,4 @@ Proyecto realizado por Yael Aguilar como parte de un curso de desarrollo Front-E
 
 ### Sitio publicado
 Puedes visitar el proyecto en:
-[agrega aquí el enlace del sitio publicado]
+seriesworld-project.web.app

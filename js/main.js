@@ -325,7 +325,7 @@ const obtenerSeriesIniciales = async () => {
     mostrarMensaje("Cargando series...");
 
     try {
-        const response = await axios.get("https://api.tvmaze.com/shows", {params: {page: 2}});
+        const response = await axios.get("https://api.tvmaze.com/shows", {params: {page: 0}});
 
         const series = response.data;
 
